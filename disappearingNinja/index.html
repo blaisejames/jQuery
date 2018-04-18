@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>Disappearing Ninjas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script>
+        $(document).ready(function(){
+            // hide
+            $('div').click(function(){
+            $(this).hide('slow');
+            })
+            // show
+            $('button').click(function(){
+                $('*').show('slow');
+            })
+        });
+    </script>
+</head>
+<body>
+    <main>
+        <h1>Assignment: Disappearing Ninja</h1>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <button>Restore</button>
+    </main>
+</body>
+</html>
