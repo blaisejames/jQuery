@@ -1,0 +1,73 @@
+* {
+	font-family: 'Yantramanav', Arial, sans-serif;
+	border: 0px none;
+	padding: 0px;
+	margin: 0px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+	background-color: gray;
+}
+.wrapper {
+    width: 750px;
+	margin: 0px auto;
+    padding: 50px 0px;
+	background-color: gray;
+}
+div {
+	padding: 25px 35px;
+	margin-bottom: 10px;
+	background-color: white;
+	border-left: 5px solid red;
+
+}
+.result {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: -55px;
+	padding-left: 30px;
+	width: 150px;
+	height: 150px;
+}
+button {
+	display: inline-block;
+	margin-bottom: 50px;
+	padding: 15px;
+	width: 95px;
+	border: none;
+    background-color: darkgray;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+button:hover {
+	background-color: red;
+}
+h1{
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px 0px 10px 35px;
+	font: 900 21px/36px;
+}
+p {
+	display: inline-block;
+	width: 350px;
+	margin: 10px 30px 0px 140px;
+	font: 300 16px/24px;
+}
+h2, h3, h4, h5, h6 {
+	font-weight: 500;
+	font-size: 14px;
+	color: red;
+}
+.showimage, .toggleimage, .slideDownimage, .fadeInimage {
+	display: none;
+}
+.gray {
+	border: 5px solid gray;
+}
