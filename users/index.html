@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        $(document).ready(function() {
+            $("form").on("submit", function(event) {
+                event.preventDefault();
+                var first_name = $(this).find('[name=first_name]').val();
+                var last_name = $(this).find('[name=last_name]').val();
+                var email = $(this).find('[name=email]').val();
+                var contact = $(this).find('[name=contact]').val();
+                var contactData = "<tr><td>" + first_name + "</td><<td>" + last_name + "</td><td>" + email + "</td><td>" + contact + "</td></tr>"; 
+                $('tbody').append(contactData);
+                console.log(contactData);
+                $("form")[0].reset();       
+            });
+        });
+    </script>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Address</th>
+            <th>Contact #</th>
+        </thead>
+        <tbody>
+            <tr></tr>
+        </tbody>
+    </table>
+    <h1>Add User</h1>
+    <form>
+        First name<input type='text' name='first_name'>
+        Last name<input type='text' name='last_name'>
+        Email<input type='text' name='email'>
+        Contact #<input type='text' name='contact'>
+        <input type='submit' value='Add User'> 
+    </form>
+</body>
+</html>
